@@ -748,9 +748,6 @@ footer .wrap {
     width: 50px;
   }
   .panal_a {
-  /* border: 1px solid red; */
-  width: 380px;
-  /* height: 800px; */
   padding: 10px;
   display: flex;
   flex-direction: row;
