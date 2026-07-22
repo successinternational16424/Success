@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success International 株式会社 | Japan – Sri Lanka Machinery &amp; Vehicle Export</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="en">SUCCESS INTERNATIONAL</span>
+        <span class="jp">株式会社 — <span data-en="JAPAN EXPORT DIVISION" data-jp="日本 輸出事業部">JAPAN EXPORT
+            DIVISION</span></span>
+      </div>
+      <div class="header-right">
+        <nav>
+          <a href="#items" data-en="Item Types" data-jp="取扱品目">Item Types</a>
+          <a href="#request" data-en="Request Parts" data-jp="部品リクエスト">Request Parts</a>
+          <a href="#contact" data-en="Contact Us" data-jp="お問い合わせ">Contact Us</a>
+        </nav>
+        <div class="lang-switch">
+          <button id="langEnBtn" class="active" onclick="setLanguage('en')">EN</button>
+          <button id="langJpBtn" onclick="setLanguage('jp')">日本語</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero topline">
+    <div class="topline2">
+
+      <div class="wrap hero-inner topline">
+
+        <span class="eyebrow" data-en="Export House · Osaka, Japan" data-jp="輸出商社・日本 大阪">Export House · Osaka,
+          Japan</span>
+        <h1>
+          <span data-en="MACHINERY PARTS" data-jp="機械部品">MACHINERY PARTS</span><br>
+          <span data-en="&amp; VEHICLES" data-jp="・車両">&amp; VEHICLES</span><br>
+          <span style="color:var(--amber)" data-en="JAPAN → SRI LANKA" data-jp="日本 → スリランカ">JAPAN → SRI LANKA</span>
+        </h1>
+        <div class="route-line">
+          <span class="route-dot"></span>
+          <span data-en="JAPAN (OSAKA / NAGOYA PORT)" data-jp="日本（大阪／名古屋港）">JAPAN (OSAKA / NAGOYA PORT)</span>
+          <span class="route-track"></span>
+          <span data-en="COLOMBO, SRI LANKA" data-jp="スリランカ・コロンボ">COLOMBO, SRI LANKA</span>
+          <span class="route-dot"></span>
+        </div>
+        <p class="lead"
+          data-en="Success International 株式会社 sources genuine and used Japanese machinery parts, engines, and vehicles for buyers, garages, and dealers across Sri Lanka — inspected, consolidated, and shipped from Japan."
+          data-jp="Success International 株式会社は、スリランカ各地のバイヤー、整備工場、ディーラー様向けに、純正・中古の日本製機械部品、エンジン、車両を調達しています。検品・混載のうえ、日本から出荷いたします。">
+          Success International 株式会社 sources genuine and used Japanese machinery parts, engines, and vehicles for
+          buyers,
+          garages, and dealers across Sri Lanka — inspected, consolidated, and shipped from Japan.</p>
+        <div class="cta-row">
+          <a href="#items" class="btn btn-amber" data-en="Browse Item Types" data-jp="取扱品目を見る">Browse Item Types</a>
+          <a href="#contact" class="btn btn-outline" data-en="Contact Us" data-jp="お問い合わせ">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="items">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag" data-en="Cargo Manifest" data-jp="貨物マニフェスト">Cargo Manifest</span>
+        <h2 data-en="What we export" data-jp="取扱商品">What we export</h2>
+        <p data-en="Select an item type below to request a specific part, or click Bid to offer a price on that lot. Every request is confirmed by our Osaka office before quotation."
+          data-jp="下記より品目を選び、部品をリクエストするか、「入札」をクリックして価格を提示してください。すべてのリクエストは大阪オフィスにて確認のうえ、お見積りいたします。">Select an item type
+          below to request a specific part, or click Bid to offer a price on that lot. Every request is confirmed by our
+          Osaka office before quotation.</p>
+      </div>
+
+      <div class="manifest" id="manifestList"></div>
+    </div>
+  </section>
+
+  <section class="section" id="request" style="background:var(--paper-dim);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag" data-en="Parts Request" data-jp="部品リクエスト">Parts Request</span>
+        <h2 data-en="Request a part or similar item" data-jp="部品・類似品をリクエスト">Request a part or similar item</h2>
+        <p data-en="Tell us what you need and we'll check availability and pricing from our Japan network, then reply by email."
+          data-jp="ご希望の内容をお知らせください。日本国内のネットワークで在庫・価格を確認し、メールにてご連絡いたします。">Tell us what you need and we'll check
+          availability and pricing from our Japan network, then reply by email.</p>
+      </div>
+      <div class="panel">
+        <form id="requestForm">
+          <div class="form-grid">
+            <div class="field">
+              <label data-en="Full name" data-jp="お名前">Full name</label>
+              <input id="rq-name" name="name" type="text" required data-en-ph="Your name" data-jp-ph="お名前"
+                placeholder="Your name">
+            </div>
+            <div class="field">
+              <label data-en="Email address" data-jp="メールアドレス">Email address</label>
+              <input id="rq-email" name="email" type="email" required data-en-ph="you@example.com"
+                data-jp-ph="you@example.com" placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label data-en="Phone / WhatsApp" data-jp="電話 / WhatsApp">Phone / WhatsApp</label>
+              <div class="phone-row">
+                <select id="rq-phone-code" class="phone-code" aria-label="Country code"></select>
+                <input id="rq-phone" name="phone" type="tel" inputmode="numeric" data-en-ph="7X XXX XXXX"
+                  data-jp-ph="7X XXX XXXX" placeholder="7X XXX XXXX">
+              </div>
+            </div>
+            <div class="field">
+              <label data-en="Item type" data-jp="品目タイプ">Item type</label>
+              <select id="rq-type" name="itemType" required>
+                <option value="" data-en="Select an item type" data-jp="品目タイプを選択">Select an item type</option>
+                <option value="Used Vehicles" data-en="Used Vehicles" data-jp="中古車両">Used Vehicles</option>
+                <option value="Engines & Transmissions" data-en="Engines & Transmissions" data-jp="エンジン・トランスミッション">
+                  Engines & Transmissions</option>
+                <option value="Industrial & Construction Machinery Parts"
+                  data-en="Industrial & Construction Machinery Parts" data-jp="産業・建設機械部品">Industrial & Construction
+                  Machinery Parts</option>
+                <option value="Body & Chassis Parts" data-en="Body & Chassis Parts" data-jp="ボディ・シャシー部品">Body & Chassis
+                  Parts</option>
+                <option value="Electrical & ECU Parts" data-en="Electrical & ECU Parts" data-jp="電装・ECU部品">Electrical &
+                  ECU Parts</option>
+                <option value="Other / Not Listed" data-en="Other / Not Listed" data-jp="その他・記載なし品目">Other / Not Listed
+                </option>
+              </select>
+            </div>
+            <div class="field full">
+              <label data-en="Make / model / part name" data-jp="メーカー・車種・部品名">Make / model / part name</label>
+              <input id="rq-model" name="model" type="text" data-en-ph="e.g. Toyota Hiace 2010, alternator"
+                data-jp-ph="例：トヨタ ハイエース 2010年式、オルタネーター" placeholder="e.g. Toyota Hiace 2010, alternator">
+            </div>
+            <div class="field full">
+              <label data-en="Details" data-jp="詳細">Details</label>
+              <textarea id="rq-message" name="message"
+                data-en-ph="Quantity, condition preference, chassis/part number if known, delivery port..."
+                data-jp-ph="数量、希望コンディション、分かればシャシー／部品番号、荷揚げ港など"
+                placeholder="Quantity, condition preference, chassis/part number if known, delivery port..."></textarea>
+            </div>
+          </div>
+          <div class="form-foot">
+            <p class="form-note"
+              data-en="Submitting opens your email app with this request addressed to our export desk — review it and hit send."
+              data-jp="送信すると、メールアプリが開き、輸出担当宛にリクエスト内容が入力されます。内容をご確認のうえ送信してください。">Submitting opens your email app with
+              this request addressed to our export desk — review it and hit send.</p>
+            <button type="submit" class="btn btn-stamp" data-en="Send Request" data-jp="リクエストを送信">Send Request</button>
+          </div>
+          <p class="status-msg" id="rq-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-panel" id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag" data-en="Contact Us" data-jp="お問い合わせ">Contact Us</span>
+        <h2 data-en="Talk to the export desk" data-jp="輸出担当へのお問い合わせ">Talk to the export desk</h2>
+        <p data-en="Based in Japan, shipping to Colombo and other Sri Lankan ports. Send a message and we'll reply from our Japan office."
+          data-jp="日本を拠点に、コロンボをはじめスリランカ各港へ出荷しております。メッセージをお送りいただければ、日本オフィスよりご返信いたします。">Based in Japan, shipping to
+          Colombo and other Sri Lankan ports. Send a message and we'll reply from our Japan office.</p>
+      </div>
+      <div class="two-col">
+        <div class="panal_a">
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="field">
+                <label data-en="Full name" data-jp="お名前">Full name</label>
+                <input id="ct-name" name="name" type="text" required data-en-ph="Your name" data-jp-ph="お名前"
+                  placeholder="Your name">
+              </div>
+              <div class="field">
+                <label data-en="Email address" data-jp="メールアドレス">Email address</label>
+                <input id="ct-email" name="email" type="email" required data-en-ph="you@example.com"
+                  data-jp-ph="you@example.com" placeholder="you@example.com">
+              </div>
+              <div class="field">
+                <label data-en="Phone / WhatsApp" data-jp="電話 / WhatsApp">Phone / WhatsApp</label>
+                <div class="phone-row">
+                  <select id="ct-phone-code" class="phone-code" aria-label="Country code"></select>
+                  <input id="ct-phone" name="phone" type="tel" inputmode="numeric" data-en-ph="7X XXX XXXX"
+                    data-jp-ph="7X XXX XXXX" placeholder="7X XXX XXXX">
+                </div>
+              </div>
+              <div class="field full">
+                <label data-en="Subject" data-jp="件名">Subject</label>
+                <input id="ct-subject" name="subject" type="text" data-en-ph="What is this about?"
+                  data-jp-ph="ご用件をご記入ください" placeholder="What is this about?">
+              </div>
+              <div class="field full">
+                <label data-en="Message" data-jp="メッセージ">Message</label>
+                <textarea id="ct-message" name="message" required data-en-ph="Write your message here..."
+                  data-jp-ph="メッセージをご記入ください..." placeholder="Write your message here..."></textarea>
+              </div>
+            </div>
+            <div class="form-foot">
+              <p class="form-note"
+                data-en="This opens your email app with the message ready to send to Success International."
+                data-jp="送信すると、Success International宛のメッセージが入力された状態でメールアプリが開きます。">This opens your email app with the
+                message ready to send to Success International.</p>
+              <button type="submit" class="btn btn-amber" data-en="Send Message" data-jp="メッセージを送信">Send
+                Message</button>
+            </div>
+            <p class="status-msg" id="ct-status"></p>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="row">
+            <span class="k mono" data-en="Company" data-jp="会社名">Company</span>
+            <span class="v">Success International 株式会社</span>
+          </div>
+          <div class="row">
+            <span class="k mono" data-en="Email" data-jp="メール">Email</span>
+            <span class="v"><a href="mailto:info@success-intl.jp">info@success-intl.jp</a></span>
+          </div>
+          <div class="row">
+            <span class="k mono" data-en="Region" data-jp="地域">Region</span>
+            <span class="v" data-en="Japan (export office) — shipping to Colombo, Sri Lanka"
+              data-jp="日本（輸出事務所）— スリランカ・コロンボへ出荷">Japan (export office) — shipping to Colombo, Sri Lanka</span>
+          </div>
+          <div class="row">
+            <span class="k mono" data-en="Hours" data-jp="営業時間">Hours</span>
+            <span class="v" data-en="Mon – Sat, 09:00–18:00 JST" data-jp="月～土 9:00～18:00（日本時間）">Mon – Sat, 09:00–18:00
+              JST</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Success International 株式会社</span>
+      <span data-en="Japan → Sri Lanka Machinery &amp; Vehicle Export" data-jp="日本 → スリランカ 機械部品・車両輸出">Japan → Sri Lanka
+        Machinery &amp; Vehicle Export</span>
+    </div>
+  </footer>
+
+  <!-- BID MODAL -->
+  <div class="modal-overlay" id="bidOverlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeBidModal()" aria-label="Close">&times;</button>
+      <span class="tag" data-en="Place a Bid" data-jp="入札する">Place a Bid</span>
+      <h3 data-en="Enter your bid" data-jp="入札金額を入力">Enter your bid</h3>
+      <div class="modal-item-label" id="bidItemLabel"></div>
+      <form id="bidForm">
+        <input type="hidden" id="bd-type" name="itemType">
+        <div class="field">
+          <label data-en="Your bid amount (JPY)" data-jp="入札金額（円）">Your bid amount (JPY)</label>
+          <div class="amount-row">
+            <span>¥</span>
+            <input id="bd-amount" name="amount" type="number" min="0" step="1000" required data-en-ph="e.g. 150000"
+              data-jp-ph="例：150000" placeholder="e.g. 150000">
+          </div>
+        </div>
+        <div class="field">
+          <label data-en="Full name" data-jp="お名前">Full name</label>
+          <input id="bd-name" name="name" type="text" required data-en-ph="Your name" data-jp-ph="お名前"
+            placeholder="Your name">
+        </div>
+        <div class="field">
+          <label data-en="Email address" data-jp="メールアドレス">Email address</label>
+          <input id="bd-email" name="email" type="email" required data-en-ph="you@example.com"
+            data-jp-ph="you@example.com" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label data-en="Notes (optional)" data-jp="備考（任意）">Notes (optional)</label>
+          <textarea id="bd-message" name="message" data-en-ph="Specific unit, quantity, preferred port..."
+            data-jp-ph="希望のユニット、数量、荷揚げ港など" placeholder="Specific unit, quantity, preferred port..."></textarea>
+        </div>
+        <div class="form-foot">
+          <p class="form-note" data-en="This is a provisional offer — we'll confirm stock and final terms by email."
+            data-jp="こちらは仮の申し出です。在庫と最終条件はメールにてご確認いたします。">This is a provisional offer — we'll confirm stock and final
+            terms by email.</p>
+          <button type="submit" class="btn btn-stamp" data-en="Submit Bid" data-jp="入札を送信">Submit Bid</button>
+        </div>
+        <p class="status-msg" id="bd-status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
