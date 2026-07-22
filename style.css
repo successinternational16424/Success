@@ -747,8 +747,7 @@ footer .wrap {
     flex-basis: 50px;
     width: 50px;
   }
-}
-.panal_a {
+  .panal_a {
   /* border: 1px solid red; */
   width: 380px;
   /* height: 800px; */
@@ -756,6 +755,8 @@ footer .wrap {
   display: flex;
   flex-direction: row;
 }
+}
+
 
 .amount-row {
   display: flex;
