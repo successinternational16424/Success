@@ -1,5 +1,5 @@
 // Company inbox address — replace with your real email before publishing.
-const COMPANY_EMAIL = "info@success-intl.jp";
+const COMPANY_EMAIL = "success.international16424@gmail.com";
 let currentLang = 'en';
 
 const ITEMS = [
