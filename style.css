@@ -748,6 +748,14 @@ footer .wrap {
     width: 50px;
   }
 }
+.panal_a {
+  /* border: 1px solid red; */
+  width: 400px;
+  /* height: 800px; */
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
 
 .amount-row {
   display: flex;
